@@ -1,0 +1,34 @@
+button {
+  &:focus,
+  &:active {
+    outline-width: 0;
+  }
+}
+
+.btn {
+  border: 1px solid transparent;
+  background: transparent;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  transition: all .3s ease;
+
+  &-default {
+    padding: 9px 10px 7px;
+    color: #fff;
+    background-color: #ff6100;
+    &:hover {
+      color: #ff6100;
+      background-color: transparent;
+      border-color: #ff6100;
+    }
+    &:focus {
+      -webkit-box-shadow: 0 0 0 2px rgba(#ff6100, 0.5);
+      box-shadow: 0 0 0 2px rgba(#ff6100, 0.5);
+    }
+    &:disabled {
+      background-color: #ff8e5b;
+      border-color: #ff8e5b;
+    }
+  }
+}

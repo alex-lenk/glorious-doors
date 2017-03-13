@@ -1,0 +1,64 @@
+.quick-card {
+  &-img {
+    text-align: center;
+    .img {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+  &-info {
+  }
+}
+
+.door_types {
+  margin-bottom: 7px;
+  padding-left: 0;
+  @include clearfix;
+  li {
+    display: table;
+    vertical-align: middle;
+    float: left;
+    margin-bottom: 17px;
+    position: relative;
+    width: 50%;
+  }
+  a {
+    height: 36px;
+    color: #000;
+    font-size: 13px;
+    text-decoration: none;
+    padding-left: 58px;
+    margin-bottom: 17px;
+    margin-left: 28px;
+
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 38px;
+    position: relative;
+    &[href="#SINGLE"] {
+      background: url(../img/i-dor1.png) no-repeat left;
+    }
+    &[href="#DOUBLE"] {
+      background: url(../img/i-dor2.png) no-repeat left;
+    }
+    &[href="#MECH_SINGLE"] {
+      background: url(../img/i-dor4.png) no-repeat left;
+    }
+    &[href="#MECH_DOUBLE"] {
+      background: url(../img/i-dor3.png) no-repeat left;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background: url(../img/empt.png) no-repeat;
+      top: 13px;
+      left: -25px;
+    }
+  }
+  .active a:before {
+    background: url(../img/act.png) no-repeat;
+  }
+}
+

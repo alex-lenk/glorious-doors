@@ -1,0 +1,57 @@
+.card {
+  margin: 0 -5px;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 0;
+  &-item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    margin: 0 5px 10px;
+    overflow: hidden;
+    position: relative;
+    font-size: 16px;
+    box-shadow: 0 0 1px 1px rgba(#000, .1);
+    @include to('m') {
+      min-height: 450px;
+    }
+    @include from('m') {
+      width: calc(25% - 10px);
+    }
+    @include at('s') {
+      width: calc(50% - 10px);
+    }
+    &:hover .quick-view {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  &-title {
+    margin-bottom: 20px;
+    min-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    @include at('l') {
+      min-height: 60px;
+    }
+  }
+  &-media {
+    height: 300px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    img {
+      height: auto;
+      max-height: 100%;
+    }
+  }
+  &-bottom {
+  }
+  &-price {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .btn-default {
+    padding: 7px 5px;
+  }
+}

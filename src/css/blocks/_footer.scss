@@ -1,0 +1,105 @@
+footer .row {
+  @include clearfix;
+}
+
+.footer-logo {
+  @include to('s') {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.footer-top {
+  padding: 20px 0;
+  background-color: #dbdbdb;
+  @include at('l') {
+    .col-md-3 {
+      flex: 0 0 33%;
+      max-width: 33%;
+    }
+  }
+}
+
+.footer-contacts {
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include from('xl') {
+    height: 245px;
+  }
+  @include to('l') {
+    margin-top: 25px;
+    max-width: 100%;
+    flex-basis: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    @include between('s', 'l') {
+      flex-basis: 50%;
+      margin-bottom: 15px;
+    }
+    @include to('xs') {
+      margin-bottom: 20px;
+    }
+  }
+  .icon {
+    width: 24px;
+    margin-right: 10px;
+    fill: #ff6100;
+  }
+}
+
+.footer-location {
+  @include from('xl') {
+    flex-basis: 60px;
+  }
+  .icon {
+    width: 32px;
+    @include at('m') {
+      width: 42px;
+    }
+    @include at('s') {
+      width: 54px;
+    }
+  }
+}
+
+.footer-menu {
+  margin-bottom: 0;
+  list-style: none;
+  @include to('xs') {
+    width: 100%;
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
+  li {
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #4a4a4a;
+  color: #bababa;
+  font-size: 14px;
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include from('m') {
+      height: 130px;
+    }
+    @include to('s') {
+      margin-top: 20px;
+    }
+  }
+}
