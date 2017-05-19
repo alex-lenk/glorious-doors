@@ -1,7 +1,7 @@
 button {
   &:focus,
   &:active {
-    outline-width: 0;
+    outline: none;
   }
 }
 
@@ -17,14 +17,10 @@ button {
     padding: 9px 10px 7px;
     color: #fff;
     background-color: #ff6100;
-    &:hover {
+    &:hover, &:focus, &:active {
       color: #ff6100;
       background-color: transparent;
       border-color: #ff6100;
-    }
-    &:focus {
-      -webkit-box-shadow: 0 0 0 2px rgba(#ff6100, 0.5);
-      box-shadow: 0 0 0 2px rgba(#ff6100, 0.5);
     }
     &:disabled {
       background-color: #ff8e5b;

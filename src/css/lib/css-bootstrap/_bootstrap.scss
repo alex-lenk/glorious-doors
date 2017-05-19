@@ -1,75 +1,3 @@
-/*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2017 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-/*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=9d4b655b1ca7d5886684399731ea0672)
- * Config saved to config.json and https://gist.github.com/9d4b655b1ca7d5886684399731ea0672
- */
-/*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.img-rounded {
-  border-radius: 0;
-}
-
-.img-thumbnail {
-  padding: 4px;
-  line-height: 1.42857143;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-  border-radius: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-}
-
-.img-circle {
-  border-radius: 50%;
-}
-
-hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 0;
-  border-top: 1px solid #eeeeee;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  clip: auto;
-}
-
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -999,7 +927,6 @@ button.close {
   bottom: -10px;
 }
 
-
 .clearfix:after,
 .panel-body:after,
 .modal-header:after,
@@ -1007,32 +934,4 @@ button.close {
   content: " ";
   display: table;
   clear: both;
-}
-
-.hide {
-  display: none !important;
-}
-
-.show {
-  display: block !important;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.text-hide {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.affix {
-  position: fixed;
 }

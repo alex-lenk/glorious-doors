@@ -9,18 +9,10 @@ var gulp = require('gulp'),
     rigger = require('gulp-rigger'),
     includer = require("gulp-x-includer"),
     browserSync = require('browser-sync'),
-    cleanCSS = require('gulp-clean-css'),
     watch = require('gulp-watch'),
     newer = require('gulp-newer'),
-    rename = require('gulp-rename'),
-    svgSprite = require('gulp-svg-sprites'),
-    svgmin = require('gulp-svgmin'),
-    cheerio = require('gulp-cheerio'),
-    replace = require('gulp-replace'),
     create = browserSync.create(),
-    reload = browserSync.reload,
-    svgstore = require('gulp-svgstore'),
-    path = require('path');
+    reload = browserSync.reload;
 
 gulp.task('svgstore', function () {
     return gulp

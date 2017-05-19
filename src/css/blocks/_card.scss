@@ -19,6 +19,9 @@
     @include from('m') {
       width: calc(25% - 10px);
     }
+    @include from('m') {
+      width: calc(25% - 10px);
+    }
     @include at('s') {
       width: calc(50% - 10px);
     }

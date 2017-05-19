@@ -37,8 +37,8 @@ footer .row {
     flex-wrap: wrap;
   }
   li {
-    display: flex;
-    align-items: center;
+    padding-left: 50px;
+    position: relative;
     @include between('s', 'l') {
       flex-basis: 50%;
       margin-bottom: 15px;
@@ -49,23 +49,19 @@ footer .row {
   }
   .icon {
     width: 24px;
-    margin-right: 10px;
+    margin-top: -12px;
     fill: #ff6100;
+    position: absolute;
+    left: 0;
+    top: 50%;
   }
 }
 
 .footer-location {
-  @include from('xl') {
-    flex-basis: 60px;
-  }
   .icon {
-    width: 32px;
-    @include at('m') {
-      width: 42px;
-    }
-    @include at('s') {
-      width: 54px;
-    }
+    width: 30px;
+    left: -3px;
+    margin-top: -15px;
   }
 }
 
