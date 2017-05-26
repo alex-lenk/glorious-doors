@@ -1,12 +1,8 @@
-.quick-card {
-  &-img {
-    text-align: center;
-    .img {
-      max-width: 300px;
-      margin: 0 auto;
-    }
-  }
-  &-info {
+.quick-card-img {
+  text-align: center;
+  .img {
+    max-width: 300px;
+    margin: 0 auto;
   }
 }
 

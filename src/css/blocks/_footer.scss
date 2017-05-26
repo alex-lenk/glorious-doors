@@ -2,22 +2,9 @@ footer .row {
   @include clearfix;
 }
 
-.footer-logo {
-  @include to('s') {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-}
-
 .footer-top {
   padding: 20px 0;
   background-color: #dbdbdb;
-  @include at('l') {
-    .col-md-3 {
-      flex: 0 0 33%;
-      max-width: 33%;
-    }
-  }
 }
 
 .footer-contacts {
@@ -26,26 +13,9 @@ footer .row {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @include from('xl') {
-    height: 245px;
-  }
-  @include to('l') {
-    margin-top: 25px;
-    max-width: 100%;
-    flex-basis: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
   li {
     padding-left: 50px;
     position: relative;
-    @include between('s', 'l') {
-      flex-basis: 50%;
-      margin-bottom: 15px;
-    }
-    @include to('xs') {
-      margin-bottom: 20px;
-    }
   }
   .icon {
     width: 24px;
@@ -57,27 +27,17 @@ footer .row {
   }
 }
 
-.footer-location {
-  .icon {
-    width: 30px;
-    left: -3px;
-    margin-top: -15px;
-  }
+.footer-location .icon {
+  width: 30px;
+  left: -3px;
+  margin-top: -15px;
 }
 
 .footer-menu {
   margin-bottom: 0;
   list-style: none;
-  @include to('xs') {
-    width: 100%;
-    &:first-of-type {
-      margin-bottom: 20px;
-    }
-  }
-  li {
-    &:not(:last-of-type) {
-      margin-bottom: 10px;
-    }
+  li:not(:last-of-type) {
+    margin-bottom: 10px;
   }
 }
 

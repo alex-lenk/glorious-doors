@@ -1,59 +1,41 @@
 .top-nav {
   margin: 0 0 30px;
   position: relative;
-  &-menu {
-    @include from('m') {
-      height: 45px;
-      border-top: 2px solid #ff6100;
-      border-bottom: 2px solid #ff6100;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    @include to('s') {
-      width: 260px;
-      padding: 20px 10px;
-      box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
-      background-color: rgba(255, 255, 255, 0.9);
-      transform: translateX(-110%);
-      will-change: transform;
-      position: absolute;
-      top: 50px;
-      left: -1px;
-      z-index: 90;
-    }
-    &-point {
-      font-size: 18px;
-      @include to('s') {
-        &:not(:last-of-type) {
-          margin-bottom: 10px;
-        }
-      }
-/*      &:first-of-type::before {
-        width: 22px;
-        height: 30px;
-        margin-right: 10px;
-        display: inline-block;
-        vertical-align: middle;
-        background: url(../img/icons/interior-doors.png) no-repeat center;
-        content: '';
-      }*/
-    }
-    &-link {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-    &-link:hover, .current {
-      color: #ff6100;
-    }
-    .current {
-      cursor: default;
-    }
+}
 
-    &__active {
-      transform: translateX(0);
-    }
+.top-nav-menu {
+  @include to('s') {
+    width: 260px;
+    padding: 20px 10px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateX(-110%);
+    will-change: transform;
+    position: absolute;
+    top: 50px;
+    left: -1px;
+    z-index: 90;
   }
+  .current {
+    cursor: default;
+  }
+}
+
+.top-nav-menu-point {
+  font-size: 18px;
+}
+
+.top-nav-menu-link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.top-nav-menu-link:hover, .current {
+  color: #ff6100;
+}
+
+.top-nav-menu__active {
+  transform: translateX(0);
 }
 
 .mobile-menu {
@@ -63,9 +45,6 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  @include from('m') {
-    display: none;
-  }
   &::before {
     height: 1px;
     width: 20px;
