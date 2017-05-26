@@ -8,81 +8,16 @@
 @import "blocks/header";
 @import "blocks/top-nav";
 @import "blocks/main-tabs";
+@import "blocks/quick-view";
 @import "blocks/quick-card";
 @import "blocks/sidebar";
 @import "blocks/card";
 @import "blocks/footer";
-
-.wrapper {
-  @include to('s') {
-    overflow-x: hidden;
-  }
-}
+@import "blocks/home-filter";
 
 .content-wrap {
   margin-bottom: 50px;
   @include clearfix;
-}
-
-.home-filter {
-  margin-bottom: 15px;
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-  @include to('xs') {
-    flex-direction: column;
-  }
-  .all-doors {
-    text-transform: uppercase;
-    font-weight: bold;
-    align-self: center;
-    white-space: nowrap;
-    @include to('xs') {
-      margin-bottom: 10px;
-    }
-  }
-  .filter {
-    @include from('s') {
-      text-align: right;
-    }
-    .sort-by {
-      text-align: left;
-      display: inline-block;
-      vertical-align: top;
-      @include to('s') {
-        margin-bottom: 10px;
-      }
-    }
-    .title {
-      margin-bottom: 0;
-      font-size: 14px;
-      margin-right: 10px;
-      display: inline-block;
-      vertical-align: middle;
-      @include to('xs') {
-        margin-bottom: 5px;
-      }
-    }
-    .select-form {
-      width: 162px;
-      height: 30px;
-      display: inline-block;
-      vertical-align: middle;
-      font-size: 14px;
-      border: 0;
-      box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
-    }
-
-    .show-by {
-      width: 211px;
-      display: inline-block;
-      vertical-align: top;
-
-      .select-form {
-        width: 74px;
-      }
-    }
-  }
 }
 
 .home-content {
@@ -110,15 +45,6 @@
 
 .modal-body {
   @include clearfix;
-}
-
-.fm-panel {
-  top: auto !important;;
-  bottom: 0
-}
-
-body.fm.fm-pos-top {
-  padding-top: 0 !important;
 }
 
 .nav-tabs {
