@@ -4,8 +4,13 @@
   list-style: none;
   text-align: center;
   font-size: 0;
+
   .btn-default {
     padding: 7px 5px;
+  }
+
+  .quick-view {
+    height: calc(100% - 75px);
   }
 }
 

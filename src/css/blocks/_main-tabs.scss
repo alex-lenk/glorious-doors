@@ -1,5 +1,8 @@
 .main-tabs {
   margin-bottom: 60px;
+  .quick-view {
+    height: calc(100% - 65px);
+  }
 }
 
 .main-tabs-nav {
@@ -58,8 +61,8 @@
   overflow: hidden;
   transition: all 0.3s ease;
   &:hover .quick-view {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 

@@ -18,17 +18,20 @@ footer .row {
     position: relative;
   }
   .icon {
-    width: 24px;
+    width: 22px;
     margin-top: -12px;
     fill: #ff6100;
     position: absolute;
     left: 0;
     top: 50%;
   }
+  .clock {
+    width: 24px;
+  }
 }
 
 .footer-location .icon {
-  width: 30px;
+  width: 26px;
   left: -3px;
   margin-top: -15px;
 }
