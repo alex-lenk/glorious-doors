@@ -11,12 +11,15 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     watch = require('gulp-watch'),
     newer = require('gulp-newer'),
+    svgstore = require('gulp-svgstore'),
+    svgmin = require('gulp-svgmin'),
+    path = require('path'),
     create = browserSync.create(),
     reload = browserSync.reload;
 
 gulp.task('svgstore', function () {
     return gulp
-        .src('./src/img/icons/*.svg')
+        .src('sources/sprite/*.svg')
         .pipe(svgmin(function (file) {
             var prefix = path.basename(file.relative, path.extname(file.relative));
             return {
@@ -29,10 +32,11 @@ gulp.task('svgstore', function () {
             }
         }))
         .pipe(svgstore())
-        .pipe(gulp.dest('./build/img/icons'));
+        .pipe(gulp.dest('test/dest'));
 });
 
-var path = {
+
+var way = {
         build: { //Тут мы укажем куда складывать готовые после сборки файлы
             html: './build/',
             js: './build/js/',
@@ -73,52 +77,55 @@ gulp.task('webserver', function () {
 });
 
 gulp.task('clean', function (cb) {
-    rimraf(path.clean, cb);
+    rimraf(way.clean, cb);
 });
 
+
 gulp.task('html:build', function () {
-    gulp.src(path.src.html) //Выберем файлы по нужному пути
+    gulp.src(way.src.html) //Выберем файлы по нужному пути
         .pipe(includer()) //Прогоним через rigger
-        .pipe(gulp.dest(path.build.html))
+        .pipe(gulp.dest(way.build.html))
         .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений*/
 });
 
 gulp.task('img:build', function (cb) {
-    gulp.src(path.src.img) //Выберем файлы по нужному пути
-        .pipe(newer(path.build.img))
+    gulp.src(way.src.img) //Выберем файлы по нужному пути
+        .pipe(newer(way.build.img))
         .pipe(imagemin())
-        .pipe(gulp.dest(path.build.img))//Выплюнем их в папку build
+        .pipe(gulp.dest(way.build.img))//Выплюнем их в папку build
         .pipe(reload({stream: true})); //И перезагрузим сервер
 });
 
 gulp.task('js:build', function () {
-    gulp.src(path.src.js) //Найдем наш main файл
+    gulp.src(way.src.js) //Найдем наш main файл
         .pipe(rigger()) //Прогоним через rigger
-        .pipe(gulp.dest(path.build.js)) //Выплюнем готовый файл в build
+        .pipe(gulp.dest(way.build.js)) //Выплюнем готовый файл в build
         .pipe(reload({stream: true})); //И перезагрузим сервер
 });
 
 gulp.task('css:build', function () {
-    gulp.src(path.src.css) //Выберем наш main.scss
+    gulp.src(way.src.css) //Выберем наш main.scss
         .pipe(sourcemaps.init())
         .pipe(sass({
-            outputStyle: 'expanded'
+            outputStyle: 'compressed',
+            sourceMap: true,
+            errLogToConsole: true
         }).on('error', sass.logError)) //Скомпилируем
-        .pipe(gulp.dest(path.build.css)) //И в build
+        .pipe(gulp.dest(way.build.css)) //И в build
         .pipe(autoprefixer({
             browsers: ['last 5 versions'],
             cascade: false
         })) //Добавим вендорные префиксы
-        .pipe(sourcemaps.write(path.build.maps, {
+        .pipe(sourcemaps.write(way.build.maps, {
             addComment: true
         }))
-        .pipe(gulp.dest(path.build.css)) //И в build
+        .pipe(gulp.dest(way.build.css)) //И в build
         .pipe(reload({stream: true}));
 });
 
 gulp.task('fonts:build', function () {
-    gulp.src(path.src.fonts)
-        .pipe(gulp.dest(path.build.fonts))
+    gulp.src(way.src.fonts)
+        .pipe(gulp.dest(way.build.fonts))
 });
 
 gulp.task('build', [
@@ -130,19 +137,19 @@ gulp.task('build', [
 ]);
 
 gulp.task('watch', function () {
-    watch([path.watch.html], function (event, cb) {
+    watch([way.watch.html], function (event, cb) {
         gulp.start('html:build');
     });
-    watch([path.watch.css], function (event, cb) {
+    watch([way.watch.css], function (event, cb) {
         gulp.start('css:build');
     });
-    watch([path.watch.js], function (event, cb) {
+    watch([way.watch.js], function (event, cb) {
         gulp.start('js:build');
     });
-    watch([path.watch.fonts], function (event, cb) {
+    watch([way.watch.fonts], function (event, cb) {
         gulp.start('fonts:build');
     });
-    watch([path.watch.img], function (event, cb) {
+    watch([way.watch.img], function (event, cb) {
         gulp.start('img:build');
     });
 });

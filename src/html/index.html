@@ -4,8 +4,34 @@
     <!-- include "temp/head.html" -->
 </head>
 <body>
-<!-- include "temp/svg.html" -->
-<div class="wrapper container">
+<header>
+    <div class="top-bar">
+        <ul class="container">
+            <li class="top-bar-mode">
+                <svg class="clock">
+                    <use xlink:href="img/sprite.svg#clock"></use>
+                </svg>
+                с 9:00 до 18:00
+            </li>
+            <li class="as-link" data-toggle="modal" data-target="#StoreAddress">
+                <svg class="localizer">
+                    <use xlink:href="img/sprite.svg#localizer"></use>
+                </svg>
+                Адрес магазина
+            </li>
+            <li class="as-link" data-toggle="modal" data-target="#call-wizard">
+                <svg class="roller">
+                    <use xlink:href="img/sprite.svg#roller"></use>
+                </svg>
+                Вызвать замерщика
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+
+<div class="wrapper container" style="display: none !important;">
     <!-- include "temp/header.html" -->
     <!-- include "temp/main-tabs.html" -->
     <div class="content-wrap row">
@@ -268,14 +294,12 @@
     <!-- include "temp/home-content.html" -->
 </div>
 
-<!-- include "temp/footer.html" -->
+<!-- include7 "temp/footer.html" -->
 
-<!-- include "temp/modals.html" -->
+<!-- include7 "temp/modals.html" -->
 
 <script src="js/jquery.js"></script>
-
 <script src="js/lib.js"></script>
-
 <script src="js/common.js"></script>
 
 </body>
