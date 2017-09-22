@@ -6,7 +6,6 @@ var swiper = new Swiper('.swiper-container', {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: 4000,
-    autoplayDisableOnInteraction: false,
     effect: "fade"
 });
 

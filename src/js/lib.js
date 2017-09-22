@@ -1,6 +1,6 @@
 //= lib/swiper.jquery.min.js
+//= lib/jquery.fancybox.min.js
 
-// = lib/jquery.fancybox.min.js
 // = lib/bootstrap/bootstrap.min.js
 // = lib/jquery.ez-plus.js
 
