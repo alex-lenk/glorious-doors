@@ -1,12 +1,11 @@
-// = ../../bower_components/slick-carousel/slick/slick.min.js
+//= lib/swiper.jquery.min.js
 
 // = lib/jquery.fancybox.min.js
-//= lib/bootstrap/bootstrap.min.js
-//= lib/jquery.ez-plus.js
+// = lib/bootstrap/bootstrap.min.js
+// = lib/jquery.ez-plus.js
 
-(function ($) {
+/*(function ($) {
     $(function () {
-
         $('.tabs__caption').on('click', 'li:not(.active)', function () {
             $(this)
                 .addClass('active').siblings().removeClass('active')
@@ -14,4 +13,4 @@
         });
 
     });
-})(jQuery);
+})(jQuery);*/
