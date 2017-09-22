@@ -3,9 +3,6 @@
     a {
         font-weight: bold;
         text-transform: uppercase;
-        &:not(:hover) {
-            color: #334141;
-        }
     }
 }
 

@@ -12,13 +12,13 @@ body {
 }
 
 a, .as-link {
-    color: #3bc3c3;
+    color: $mainColor;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
     &:hover,
     &:focus {
-        color: #1f9595;
+        color: $hoverColor;
         text-decoration: none;
     }
     &:focus {
@@ -117,6 +117,7 @@ h6 {
 .clearfix {
     @include clearfix;
 }
+/*
 
 .tabs__content {
     display: none;
@@ -125,3 +126,4 @@ h6 {
 .tabs__content.active {
     display: block;
 }
+*/
