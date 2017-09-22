@@ -1,3 +1,7 @@
+.global-header {
+    border-bottom: 1px solid #ececec;
+}
+
 .top-bar {
     background: #fff;
     border-bottom: 1px solid #ececec;
@@ -45,7 +49,6 @@
 
 .site-header {
     height: 140px;
-    border-bottom: 1px solid #ececec;
     display: flex;
     align-items: center;
     justify-content: space-between;
