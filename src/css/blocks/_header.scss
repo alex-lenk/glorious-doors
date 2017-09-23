@@ -42,7 +42,7 @@
             fill: #334141;
         }
         &:hover svg {
-            fill: #1f9595;
+            fill: $azureColor;
         }
     }
 }
@@ -55,7 +55,7 @@
 }
 
 .logo {
-    max-width: 140px;
+    max-width: 203px;
 }
 
 .header-support {
@@ -87,6 +87,7 @@
     height: 40px;
     display: flex;
     .form-control {
+        border-width: 2px;
         border-right: 0;
     }
 }
@@ -95,8 +96,8 @@
     width: 55px;
     height: 100%;
     border-radius: 0 3px 3px 0;
-    background-color: #3bc3c3;
-    border: 1px solid #3bc3c3;
+    background-color: $azureColor;
+    border: 1px solid $azureColor;
     transition: all .3s ease;
     .search {
         width: 28px;
@@ -108,7 +109,7 @@
     &:hover {
         background-color: #fff;
         .search {
-            fill: #3bc3c3;
+            fill: $azureColor;
         }
     }
 }
@@ -135,7 +136,7 @@
         &:hover .header-cart {
             background-color: #fff;
             .cart {
-                stroke: #3bc3c3;
+                stroke: $azureColor;
             }
         }
     }
@@ -148,8 +149,8 @@
     display: block;
     float: left;
     border-radius: 3px;
-    background-color: #3bc3c3;
-    border: 1px solid #3bc3c3;
+    background-color: $azureColor;
+    border: 1px solid $azureColor;
     position: relative;
     transition: all .3s ease;
     .cart {
