@@ -17,6 +17,15 @@
 @import "blocks/main-offer";
 @import "blocks/main-offer-slider";
 @import "blocks/main-offer-materials";
+@import "blocks/section-service";
+
+header, footer {
+    flex-shrink: 0;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+}
 
 .modal-title {
     margin-bottom: 35px;
@@ -40,6 +49,7 @@
         transition: all 0.3s ease;
     }
 }
+
 
 /*@import "common/icons";
 @import "blocks/top-nav";
