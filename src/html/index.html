@@ -13,13 +13,13 @@
                 </svg>
                 с 9:00 до 18:00
             </li>
-            <li class="as-link" data-toggle="modal" data-target="#StoreAddress">
+            <li class="as-link" data-fancybox="modal-1" data-src="#StoreAddress">
                 <svg class="localizer">
                     <use xlink:href="img/sprite.svg#localizer"></use>
                 </svg>
                 Адрес магазина
             </li>
-            <li class="as-link" data-toggle="modal" data-target="#call-wizard">
+            <li class="as-link" data-fancybox="modal-2" data-src="#call-wizard">
                 <svg class="roller">
                     <use xlink:href="img/sprite.svg#roller"></use>
                 </svg>
@@ -595,9 +595,6 @@
 
 <!-- include7 "temp/modals.html" -->
 
-<script src="js/jquery.js"></script>
-<script src="js/lib.js"></script>
-<script src="js/common.js"></script>
 
 <div class="modal-block" style="display: none;" id="shpon">
     <p>Шпон это материал получаемый из стволов деревьев различных пород в процессе срезания тонкого слоя древесины.</p>
@@ -635,6 +632,45 @@
         областей промышленности. Универсальная система выбора цветов RAL востребована во многих отраслях, где<br>
         необходимо правильное понимание цвета.</p>
 </div>
+
+<div class="modal-block" style="display: none;" id="call-wizard">
+    <form action="#" method="post" class="ajax_form call-wizard">
+        <div class="call-wizard-title modal-title">
+            <svg class="roller">
+                <use xlink:href="img/sprite.svg#roller"></use>
+            </svg>
+            Вызов замерщика
+        </div>
+
+        <div class="form-group">
+            <input type="text" name="name" id="field-name" class="form-control">
+            <label class="input-label" for="field-name">Ваше имя</label>
+        </div>
+
+        <div class="form-group">
+            <input type="text" name="phone" id="field-phone" class="form-control">
+            <label class="input-label" for="field-phone">Ваш телефон</label>
+        </div>
+
+        <button class="btn btn-light"><span>ОТПРАВИТЬ</span></button>
+    </form>
+</div>
+
+<div class="modal-block" style="display: none;" id="StoreAddress">
+    <div class="modal-title">Адрес магазина</div>
+
+    <p>Город Москва, метро "Теплый Стан"<br>
+        Калужское шоссе 4, стр. 1, цокальный этаж 45/1</p>
+
+    <div>
+        <a href="https://yandex.ru/maps/?um=constructor%3A9fc7968a25907bac08f41e4f570350fac771581897830664ae5f11ea67d25d3f&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A9fc7968a25907bac08f41e4f570350fac771581897830664ae5f11ea67d25d3f&amp;width=600&amp;height=400&amp;lang=ru_RU" alt=""></a>
+    </div>
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/lib.js"></script>
+<script src="js/common.js"></script>
 
 </body>
 </html>
