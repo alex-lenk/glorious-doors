@@ -1,15 +1,16 @@
+html, body {
+    height: 100%;
+}
+
 body {
-    height: 100vh;
-    font-size: 16px;
+    min-height: 100vh;
     background: #fff;
     color: #334141;
-    padding: 0;
-    margin: 0;
     line-height: 1;
+    font-size: 16px;
     font-weight: normal;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     position: relative;
-    cursor: default;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -120,6 +121,7 @@ h6 {
 .clearfix {
     @include clearfix;
 }
+
 /*
 
 .tabs__content {

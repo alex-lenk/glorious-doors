@@ -45,11 +45,4 @@ $(document).ready(function () {
         }
     });
     //END
-
-    $('.toolbar').toolbar({
-        content: '.toolbar-options',
-        position: 'bottom',
-        style: 'primary',
-        animation: 'flip'
-    });
 });

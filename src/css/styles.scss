@@ -18,13 +18,10 @@
 @import "blocks/main-offer-slider";
 @import "blocks/main-offer-materials";
 @import "blocks/section-service";
-
-header, footer {
-    flex-shrink: 0;
-}
+@import "blocks/footer-dark";
 
 .wrapper {
-    flex: 1 0 auto;
+    flex: 1;
 }
 
 .modal-title {

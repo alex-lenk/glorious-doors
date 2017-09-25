@@ -9,7 +9,6 @@
         height: 45px;
         margin-bottom: 0;
         list-style: none;
-        text-transform: uppercase;
         font-size: 14px;
         display: flex;
         align-items: center;
@@ -38,6 +37,7 @@
         transition: all 0.3s ease;
     }
     .as-link {
+        text-transform: uppercase;
         svg {
             fill: #334141;
         }
