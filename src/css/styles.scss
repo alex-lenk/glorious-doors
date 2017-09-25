@@ -22,6 +22,8 @@
 @import "blocks/footer";
 @import "blocks/card";
 @import "blocks/carousel-items";
+@import "blocks/product-properties";
+@import "blocks/quick-card";
 
 .wrapper {
     flex: 1;
@@ -55,15 +57,39 @@
     padding: 0;
 }
 
+.home-content {
+    margin-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #fafafa;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    line-height: 1.4;
+}
+
+.color-carousel {
+    margin-bottom: 50px;
+}
+
+.color-carousel-media {
+    margin-bottom: 15px;
+}
+
+.color-carousel-title {
+    font-weight: bold;
+}
+
+.color-items-slider {
+    text-align: center;
+}
+
 /*
 @import "common/icons";
 @import "blocks/top-nav";
 @import "blocks/main-tabs";
 @import "blocks/quick-view";
-@import "blocks/quick-card";
 @import "blocks/sidebar";
-@import "blocks/home-filter";
-@import "blocks/product-properties";*/
+@import "blocks/home-filter";*/
 
 /*
 

@@ -8,9 +8,6 @@
 
 $(document).ready(function () {
 // Исправление бага в IE на телефонах
-// Copyright 2014-2017 The Bootstrap Authors
-// Copyright 2014-2017 Twitter, Inc.
-// Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
     if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
         var msViewportStyle = document.createElement('style');
         msViewportStyle.appendChild(
@@ -39,6 +36,14 @@ $(document).ready(function () {
         slidesPerView: 5,
         slidesPerColumn: 2,
         autoplay: 4000,
+        spaceBetween: 0
+    });
+
+    var colorItemsSlider = new Swiper('.color-items-slider', {
+        nextButton: '.carousel-next',
+        prevButton: '.carousel-prev',
+        slidesPerView: 6,
+        autoplay: 3000,
         spaceBetween: 0
     });
 
