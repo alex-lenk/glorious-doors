@@ -1,64 +1,27 @@
-footer .row {
-  @include clearfix;
+footer {
+    color: #fff;
+    a {
+        color: #fff;
+        &:hover {
+            color: #ccc;
+        }
+    }
 }
 
-.footer-top {
-  padding: 20px 0;
-  background-color: #dbdbdb;
+.section-copy {
+    font-size: 14px;
+    background-color: #191919;
+    a {
+        color: #ccc;
+    }
 }
 
-.footer-contacts {
-  margin-bottom: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  li {
-    padding-left: 50px;
-    position: relative;
-  }
-  .icon {
-    width: 22px;
-    margin-top: -12px;
-    fill: #ff6100;
-    position: absolute;
-    left: 0;
-    top: 50%;
-  }
-  .clock {
-    width: 24px;
-  }
-}
-
-.footer-location .icon {
-  width: 26px;
-  left: -3px;
-  margin-top: -15px;
-}
-
-.footer-menu {
-  margin-bottom: 0;
-  list-style: none;
-  li:not(:last-of-type) {
-    margin-bottom: 10px;
-  }
-}
-
-.footer-bottom {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #4a4a4a;
-  color: #bababa;
-  font-size: 14px;
-  .info {
+.section-copy-wrap {
+    padding-top: 25px;
+    padding-bottom: 25px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    @include from('m') {
-      height: 130px;
-    }
-    @include to('s') {
-      margin-top: 20px;
-    }
-  }
+}
+
+.developer {
+    margin-left: auto;
 }

@@ -1,12 +1,5 @@
 .footer-dark {
     background-color: #2F2F2F;
-    color: #fff;
-    a {
-        color: #fff;
-        &:hover {
-            color: #ccc;
-        }
-    }
 }
 
 .footer-dark-wrap {
@@ -23,7 +16,7 @@
     .btn-light {
         line-height: 46px;
         color: #fff;
-        border: 2px solid #fff;
+        border: 1px solid #fff;
     }
 }
 
@@ -61,6 +54,7 @@
 .footer-menu {
     margin-bottom: 0;
     list-style: none;
+    line-height: 1.2;
     li:not(:last-child) {
         margin-bottom: 15px;
     }
@@ -68,8 +62,6 @@
         padding-left: 15px;
         display: inline-block;
         position: relative;
-        &::before, &::after {
-        }
         &::before {
             top: 4px;
             left: 0;
@@ -80,7 +72,7 @@
             transition: all 0.3s ease;
         }
         &:hover::before {
-            left: 3px;
+            transform: translateX(3px);
         }
     }
 }
@@ -115,4 +107,5 @@
 .footer-info-title {
     margin-bottom: 5px;
     font-weight: bold;
+    font-size: 15px;
 }
