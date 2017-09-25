@@ -20,6 +20,8 @@
 @import "blocks/section-service";
 @import "blocks/footer-dark";
 @import "blocks/footer";
+@import "blocks/card";
+@import "blocks/carousel-items";
 
 .wrapper {
     flex: 1;
@@ -48,32 +50,18 @@
     }
 }
 
-.home-items {
-    .swiper-container {
-        width: 100%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.title-section {
+    font-size: 20px;
+    padding: 0;
 }
 
-/*@import "common/icons";
+/*
+@import "common/icons";
 @import "blocks/top-nav";
 @import "blocks/main-tabs";
 @import "blocks/quick-view";
 @import "blocks/quick-card";
 @import "blocks/sidebar";
-@import "blocks/card";
 @import "blocks/home-filter";
 @import "blocks/product-properties";*/
 

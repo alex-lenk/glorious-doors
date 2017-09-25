@@ -1,10 +1,10 @@
 /*
-$(".mobile-menu").click(
-    function () {
-        $('.top-nav-menu').toggleClass("top-nav-menu__active");
-    }
-);
-*/
+ $(".mobile-menu").click(
+ function () {
+ $('.top-nav-menu').toggleClass("top-nav-menu__active");
+ }
+ );
+ */
 
 $(document).ready(function () {
 // Исправление бага в IE на телефонах
@@ -22,7 +22,7 @@ $(document).ready(function () {
     }
     // END
 
-    var swiper = new Swiper('.swiper-container', {
+    var mainOfferSider = new Swiper('.main-offer-slider', {
         pagination: '.swiper-pagination',
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
@@ -31,6 +31,15 @@ $(document).ready(function () {
         centeredSlides: true,
         autoplay: 4000,
         effect: "fade"
+    });
+
+    var homeItemsSlider = new Swiper('.home-items-slider', {
+        nextButton: '.carousel-next',
+        prevButton: '.carousel-prev',
+        slidesPerView: 5,
+        slidesPerColumn: 2,
+        autoplay: 4000,
+        spaceBetween: 0
     });
 
 
