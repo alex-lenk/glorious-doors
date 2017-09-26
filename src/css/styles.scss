@@ -26,6 +26,8 @@
 @import "blocks/quick-card";
 @import "blocks/color-carousel";
 @import "blocks/sidebar";
+@import "blocks/advantages";
+@import "blocks/publications";
 
 .wrapper {
     flex: 1;
@@ -69,7 +71,7 @@
 }
 
 .home-content {
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #fafafa;
@@ -83,6 +85,35 @@
     }
 }
 
+.information {
+    margin-bottom: 75px;
+}
+
+.interior-carousel-media {
+    height: 165px;
+    overflow: hidden;
+}
+
+.what-chose {
+    margin-bottom: 75px;
+    line-height: 1.4;
+    .double-door {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 20px;
+        display: block;
+        fill: $mainColor;
+    }
+}
+
+.manufacturer {
+    margin-bottom: 75px;
+    line-height: 1.3;
+    .title-section {
+        margin-bottom: 25px;
+    }
+}
+
 /*
 @import "common/icons";
 @import "blocks/top-nav";
@@ -93,7 +124,7 @@
 /*
 
 .content-wrap {
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     @include clearfix;
 }
 

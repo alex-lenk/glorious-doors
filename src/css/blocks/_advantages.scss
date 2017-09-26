@@ -1,0 +1,24 @@
+.advantages {
+    margin-top: 40px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    li {
+        max-width: calc(100% / 4 - 15px);
+        flex-basis: calc(100% / 4 - 15px);
+    }
+    svg {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 30px;
+        display: block;
+        fill: $mainColor;
+    }
+}
+
+.advantages-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}

@@ -54,15 +54,17 @@ button {
     &-light {
         min-width: 150px;
         height: 50px;
-        line-height: 50px;
         padding: 0 10px;
         color: $azureColor;
         border: 2px solid $azureColor;
         border-radius: 3px;
         font-size: 16px;
         position: relative;
-        display: inline-block;
         overflow: hidden;
+        font-weight: normal;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         &::after {
             content: '';
             position: absolute;

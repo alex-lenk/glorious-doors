@@ -21,8 +21,8 @@ $(document).ready(function () {
 
     var mainOfferSider = new Swiper('.main-offer-slider', {
         pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
+        nextButton: '.carousel-8',
+        prevButton: '.carousel-7',
         paginationClickable: true,
         spaceBetween: 30,
         centeredSlides: true,
@@ -31,8 +31,8 @@ $(document).ready(function () {
     });
 
     var homeItemsSlider = new Swiper('.home-items-slider', {
-        nextButton: '.carousel-next',
-        prevButton: '.carousel-prev',
+        nextButton: '.carousel-6',
+        prevButton: '.carousel-5',
         slidesPerView: 5,
         slidesPerColumn: 2,
         autoplay: 4000,
@@ -40,11 +40,19 @@ $(document).ready(function () {
     });
 
     var colorItemsSlider = new Swiper('.color-items-slider', {
-        nextButton: '.carousel-next',
-        prevButton: '.carousel-prev',
+        nextButton: '.carousel-4',
+        prevButton: '.carousel-3',
         slidesPerView: 6,
         autoplay: 3000,
         spaceBetween: 0
+    });
+
+    var doorsInterior = new Swiper('.doors-interior-carousel', {
+        nextButton: '.carousel-2',
+        prevButton: '.carousel-1',
+        slidesPerView: 3,
+        autoplay: 3000,
+        spaceBetween: 30
     });
 
 
