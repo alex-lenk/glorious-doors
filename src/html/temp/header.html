@@ -1,39 +1,100 @@
-    <header class="header row">
-        <div class="header-text col-md-4 col-sm-12">
-            <div class="header-text-title"><strong>Магазин Славные двери</strong></div>
-
-            <p class="header-text-line">Лучшие натуральные материалы и сильный выраженный дизайн.</p>
-            <p class="header-text-line">Технологические инновации и гарантированное качество.</p>
-            <p class="header-text-line">Это то, что мы стараемся вложить в каждую нашу дверь.</p>
-        </div>
-
-        <div class="header-logo col-md-3 col-sm-12">
-            <a href="#"><img src="img/logo.png" alt="Славные двери"></a>
-        </div>
-
-        <div class="header-info col-md-5 col-sm-12">
-            <div class="header-info-top">
-                <a href="tel:84957688838" class="header-info-top-phone">8 495 768 88 38</a>
-            </div>
-            <div class="header-info-bottom">
-
-
-            </div>
-            <form action="#" class="header-info-search">
-                <input type="search" class="hide-placeholder form-control" placeholder="Поиск по сайту">
-                <button class="btn"></button>
-            </form>
-        </div>
-    </header>
-
-    <nav class="top-nav">
-        <div class="mobile-menu">Меню сайта</div>
-
-        <ul class="top-nav-menu list-unstyled">
-            <li class="top-nav-menu-point"><span class="current">Межкомнатные двери</span></li>
-            <li class="top-nav-menu-point"><a href="#" class="top-nav-menu-link">Арки</a></li>
-            <li class="top-nav-menu-point"><a href="#" class="top-nav-menu-link">Фурнитура</a></li>
-            <li class="top-nav-menu-point"><a href="#" class="top-nav-menu-link">Установка дверей</a></li>
-            <li class="top-nav-menu-point"><a href="#" class="top-nav-menu-link">Контакты</a></li>
+<header class="global-header">
+    <div class="top-bar">
+        <ul class="container">
+            <li>
+                <svg class="clock">
+                    <use xlink:href="img/sprite.svg#clock"></use>
+                </svg>
+                с 9:00 до 18:00
+            </li>
+            <li class="as-link" data-fancybox="modal-1" data-src="#StoreAddress">
+                <svg class="localizer">
+                    <use xlink:href="img/sprite.svg#localizer"></use>
+                </svg>
+                Адрес магазина
+            </li>
+            <li class="as-link" data-fancybox="modal-2" data-src="#call-wizard">
+                <svg class="roller">
+                    <use xlink:href="img/sprite.svg#roller"></use>
+                </svg>
+                Вызвать замерщика
+            </li>
         </ul>
+    </div>
+
+    <div class="site-header container">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+
+        <div class="header-support">
+            <svg class="support">
+                <use xlink:href="img/sprite.svg#support"></use>
+            </svg>
+            <div class="header-support-text">Служба поддержки</div>
+            <a href="tel:+8-495-768-88-38" class="header-support-phone" rel="nofollow">+7 (495) 768-88-38</a>
+        </div>
+
+        <form action="#" class="header-search">
+            <input type="search" class="hide-placeholder form-control" placeholder="Поиск по сайту"
+                   autocomplete="off">
+            <button class="header-search-btn btn">
+                <svg class="search">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+            </button>
+        </form>
+
+        <div class="header-basket" id="msMiniCart">
+            <div class="empty">
+                <span class="header-cart">
+                    <svg class="cart">
+                        <use xlink:href="img/sprite.svg#cart"></use>
+                    </svg>
+                </span>
+                <span class="header-basket-text">Корзина пуста</span>
+            </div>
+
+            <div class="not_empty">
+                <a href="#">
+                    <span class="header-cart">
+                        <svg class="cart">
+                            <use xlink:href="img/sprite.svg#cart"></use>
+                        </svg>
+                    </span>
+                    <span class="header-basket-text">
+                        Всего товаров: &nbsp; <span class="ms2_total_count text-bold">1</span>&nbsp;шт.
+
+                        <span class="header-basket-total">
+                            на сумму: <strong class="ms2_total_cost">10 860</strong>
+                            <svg class="ruble">
+                                <use xlink:href="img/sprite.svg#ruble"></use>
+                            </svg>
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="main-nav">
+        <div class="main-nav-wrap container">
+            <div class="main-nav-cat">
+            <span class="main-nav-cat-open">
+                <svg class="cat-list">
+                    <use xlink:href="img/sprite.svg#cat-list"></use>
+                </svg>
+            </span>
+                <a href="#">Каталог дверей</a>
+            </div>
+
+            <ul class="menu list-unstyled">
+                <li class="menu-active">Главная</li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
     </nav>
+</header>
