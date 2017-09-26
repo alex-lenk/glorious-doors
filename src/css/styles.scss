@@ -24,6 +24,8 @@
 @import "blocks/carousel-items";
 @import "blocks/product-properties";
 @import "blocks/quick-card";
+@import "blocks/color-carousel";
+@import "blocks/sidebar";
 
 .wrapper {
     flex: 1;
@@ -50,6 +52,15 @@
         fill: $mainColor;
         transition: all 0.3s ease;
     }
+    
+    .tape-measure {
+        width: 27px;
+        height: 27px;
+        top: -6px;
+        left: 0;
+        position: absolute;
+        fill: $mainColor;
+    }
 }
 
 .title-section {
@@ -65,22 +76,11 @@
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     line-height: 1.4;
-}
-
-.color-carousel {
-    margin-bottom: 50px;
-}
-
-.color-carousel-media {
-    margin-bottom: 15px;
-}
-
-.color-carousel-title {
-    font-weight: bold;
-}
-
-.color-items-slider {
-    text-align: center;
+    order: 10;
+    .pull-left {
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
 }
 
 /*
@@ -88,7 +88,6 @@
 @import "blocks/top-nav";
 @import "blocks/main-tabs";
 @import "blocks/quick-view";
-@import "blocks/sidebar";
 @import "blocks/home-filter";*/
 
 /*
