@@ -1174,30 +1174,3 @@ body.fm.fm-pos-top {
     flex-grow: 1;
 }
 
-.pagination {
-    padding: 30px 0 0;
-    line-height: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    li {
-        margin: 0 5px;
-    }
-    a {
-        padding: 7px 10px 5px;
-        display: inline-block;
-        &:hover {
-            color: #fff;
-            background-color: #1f9595;
-        }
-    }
-    .disabled {
-        display: none;
-    }
-    .active-text {
-        padding: 7px 10px 5px;
-        color: #fff;
-        background-color: #3bc3c3;
-        display: inline-block;
-    }
-}
