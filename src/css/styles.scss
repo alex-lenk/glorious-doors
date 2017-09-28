@@ -30,6 +30,9 @@
 @import "blocks/publications";
 
 .page {
+    .wrapper {
+        padding-bottom: 50px;
+    }
     .global-header {
         margin-bottom: 50px;
     }
@@ -233,6 +236,16 @@
         position: absolute;
         left: 0;
         top: 2px;
+    }
+}
+
+.product-page {
+    .quick-card {
+        max-width: 100%;
+    }
+    .quick-card-media {
+        max-width: 250px;
+        flex: 0 0 250px;
     }
 }
 
