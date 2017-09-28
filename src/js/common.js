@@ -1,11 +1,3 @@
-/*
- $(".mobile-menu").click(
- function () {
- $('.top-nav-menu').toggleClass("top-nav-menu__active");
- }
- );
- */
-
 $(document).ready(function () {
 // Исправление бага в IE на телефонах
     if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
@@ -67,4 +59,10 @@ $(document).ready(function () {
         }
     });
     //END
+
+    $(".close-notification").click(
+        function () {
+            $('.notification').fadeOut();
+        }
+    );
 });
