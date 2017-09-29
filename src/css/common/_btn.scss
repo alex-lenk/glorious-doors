@@ -5,6 +5,10 @@ button {
     }
 }
 
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: none;
+}
+
 .btn {
     border: 1px solid transparent;
     background: transparent;
