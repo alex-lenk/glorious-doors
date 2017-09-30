@@ -120,6 +120,9 @@
 .page-content {
     padding-bottom: 50px;
     line-height: 1.4;
+    .breadcrumb {
+        margin-bottom: 25px;
+    }
 }
 
 .card {
@@ -312,13 +315,40 @@
     &:not(:last-of-type) {
         margin-bottom: 30px;
     }
+    a:hover .post-media {
+        &::before, &::after {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
 }
 
 .post-media {
     height: 300px;
     margin-bottom: 20px;
-    display: block;
+    display: inline-block;
+    position: relative;
     overflow: hidden;
+    &::before, &::after {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        bottom: 3px;
+        left: 3px;
+        content: '';
+        opacity: 0;
+        transition: opacity 0.35s, transform 0.35s;
+    }
+    &::before {
+        border-top: 1px solid $azureColor;
+        border-bottom: 1px solid $azureColor;
+        transform: scale(0, 1);
+    }
+    &::after {
+        border-right: 1px solid $azureColor;
+        border-left: 1px solid $azureColor;
+        transform: scale(1, 0);
+    }
 }
 
 .post-title {
@@ -350,4 +380,19 @@
 
 .post-text {
     font-size: 15px;
+}
+
+.modal-block {
+    max-width: 720px;
+    min-width: 300px;
+    .call-wizard .btn {
+        width: 100%;
+    }
+}
+
+.contract-offer-img {
+    width: 256px;
+    height: 256px;
+    margin: 15px auto 0;
+    display: block;
 }
