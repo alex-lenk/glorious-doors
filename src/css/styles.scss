@@ -34,9 +34,6 @@
     .wrapper {
         padding-bottom: 50px;
     }
-    .global-header {
-        margin-bottom: 50px;
-    }
 }
 
 .wrapper {
@@ -118,6 +115,7 @@
 }
 
 .page-content {
+    padding-top: 50px;
     padding-bottom: 50px;
     line-height: 1.4;
     .breadcrumb {
@@ -395,4 +393,38 @@
     height: 256px;
     margin: 15px auto 0;
     display: block;
+}
+
+#msProduct .quick-card-content {
+    .input-sm {
+        max-width: 70px;
+        margin-right: 15px;
+        display: inline-block;
+    }
+    .form-group {
+        margin-left: -15px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+#preloader_preload {
+    display: block;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    background: $azureColor url(../img/oval.svg) center center no-repeat;
+    background-size: 196px;
+    img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -63px 0 0 -102px;
+        box-shadow: 0 0 20px 1px #fff;
+        border-radius: 50%;
+    }
 }

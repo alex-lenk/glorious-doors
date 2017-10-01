@@ -26,19 +26,29 @@
     }
     .property-item {
         padding: 0;
+        flex-direction: column;
+    }
+    .property-name {
+        margin-bottom: 15px;
+        max-width: none;
+        flex: none;
+    }
+    .property-value {
+        padding-left: 0;
     }
 }
 
 .quick-card-title {
     padding: 0;
-    margin: 0 0 15px;
+    margin: 0 0 40px;
     font-size: 20px;
 }
 
 .quick-card-price {
     margin-bottom: 30px;
-    font-size: 18px;
-    font-weight: bold;
+    span {
+        font-size: 18px;
+    }
     .ruble {
         width: 15px;
         height: 16px;

@@ -89,3 +89,18 @@
 .field-filled .input-label {
     transform: translateY(0);
 }
+
+.error {
+    &.form-control {
+        border: 1px solid #cc0000;
+        + .error {
+            padding-top: 5px;
+            font-size: 14px;
+            display: inline-block;
+        }
+    }
+}
+
+form.ajax_form .error {
+    color: #cc0000;
+}
