@@ -1,5 +1,4 @@
 $(document).ready(function () {
-// Исправление бага в IE на телефонах
     if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
         var msViewportStyle = document.createElement('style');
         msViewportStyle.appendChild(
@@ -28,7 +27,12 @@ $(document).ready(function () {
         slidesPerView: 5,
         slidesPerColumn: 2,
         autoplay: 4000,
-        spaceBetween: 0
+        spaceBetween: 0,
+        breakpoints: {
+            992: {
+                slidesPerView: 4
+            }
+        }
     });
 
     var colorItemsSlider = new Swiper('.color-items-slider', {
@@ -36,7 +40,12 @@ $(document).ready(function () {
         prevButton: '.carousel-3',
         slidesPerView: 6,
         autoplay: 3000,
-        spaceBetween: 0
+        spaceBetween: 0,
+        breakpoints: {
+            992: {
+                slidesPerView: 4
+            }
+        }
     });
 
     var doorsInterior = new Swiper('.doors-interior-carousel', {

@@ -11,12 +11,8 @@
     list-style: none;
     display: flex;
     li {
-        padding-left: 95px;
         position: relative;
         flex: 1 1 auto;
-        &:not(:last-child) {
-            border-right: 1px solid #fff;
-        }
     }
     svg {
         width: 48px;
@@ -24,7 +20,7 @@
         fill: #fff;
         stroke: #fff;
         top: 0;
-        left: 20px;
+        left: 0;
         position: absolute;
     }
 }

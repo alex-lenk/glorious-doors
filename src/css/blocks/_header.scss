@@ -138,6 +138,23 @@
     }
 }
 
+.header-basket-close {
+    display: none;
+    top: 21px;
+    right: 18px;
+    position: absolute;
+    cursor: pointer;
+    .cross {
+        width: 17px;
+        height: 17px;
+        fill: #867A8A;
+        transition: all 0.3s ease;
+    }
+    &:hover .cross {
+        fill: #474CA6;
+    }
+}
+
 .header-cart {
     width: 55px;
     height: 40px;
