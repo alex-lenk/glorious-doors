@@ -17,9 +17,8 @@
   ],
   "dependencies": {
     "jquery": "^3.*",
-    "normalize-css": "^7.*",
     "bootstrap": "^4.*",
-    "fancybox": "^2.*",
+    "fancybox": "^3.*",
     "slick-carousel": "^1.*"
   }
 }

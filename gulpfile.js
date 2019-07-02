@@ -105,7 +105,6 @@ gulp.task('js:build', function () {
 
 gulp.task('css:build', function () {
     gulp.src(way.src.css) //Выберем наш main.scss
-        .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: 'compressed',
             sourceMap: true,
@@ -116,9 +115,6 @@ gulp.task('css:build', function () {
             browsers: ['last 5 versions'],
             cascade: false
         })) //Добавим вендорные префиксы
-        .pipe(sourcemaps.write(way.build.maps, {
-            addComment: true
-        }))
         .pipe(gulp.dest(way.build.css)) //И в build
         .pipe(reload({stream: true}));
 });
