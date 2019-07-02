@@ -1,13 +1,15 @@
-@import "../../bower_components/normalize-css/normalize";
-@import "lib/reboot";
-@import "lib/css-bootstrap/bootstrap-grid";
-/*@import "lib/jquery.ez-plus";*/
-@import 'lib/css-bootstrap/bootstrap';
-/* styles */
 @import 'lib/breakpoint';
 @import 'lib/breakpoint-slicer';
 @import "common/variables";
 @import "common/mixin";
+/* LIBs */
+@import "lib/css-bootstrap/bootstrap-reboot";
+@import "lib/css-bootstrap/bootstrap-grid";
+@import "lib/swiper";
+@import "lib/jquery.fancybox.min";
+/*@import "lib/jquery.ez-plus";*/
+/*@import 'lib/css-bootstrap/bootstrap';*/
+/* styles */
 @import "common/fonts";
 @import "common/form";
 @import "common/btn";
@@ -544,3 +546,5 @@
         flex: 0 0 25%;
     }
 }
+
+@import "media";
