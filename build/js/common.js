@@ -20,6 +20,15 @@ $(document).ready(function () {
         breakpoints: {
             992: {
                 slidesPerView: 4
+            },
+            767: {
+                slidesPerView: 3
+            },
+            567: {
+                slidesPerView: 2
+            },
+            359: {
+                slidesPerView: 1
             }
         }
     });
@@ -33,6 +42,12 @@ $(document).ready(function () {
         breakpoints: {
             992: {
                 slidesPerView: 4
+            },
+            767: {
+                slidesPerView: 3
+            },
+            567: {
+                slidesPerView: 2
             }
         }
     });
@@ -42,7 +57,15 @@ $(document).ready(function () {
         prevButton: '.carousel-1',
         slidesPerView: 3,
         autoplay: 5000,
-        spaceBetween: 30
+        spaceBetween: 30,
+        breakpoints: {
+            567: {
+                slidesPerView: 2
+            },
+            359: {
+                slidesPerView: 1
+            }
+        }
     });
 
 
@@ -58,9 +81,12 @@ $(document).ready(function () {
     });
     //END
 
-    $(".close-notification").click(
-        function () {
-            $('.notification').fadeOut();
-        }
-    );
+
+    /* Begin: Открытие и закрытие по иконке меню на мобильных */
+
+    $('.menu-switch').click(function () {
+        $('body').toggleClass('menu-opened');
+    });
+
+    /* END */
 });

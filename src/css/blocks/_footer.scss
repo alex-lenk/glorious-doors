@@ -1,27 +1,68 @@
 footer {
+  color: #fff;
+
+  a, .as-link {
     color: #fff;
-    a, .as-link {
-        color: #fff;
-        &:hover {
-            color: #ccc;
-        }
+
+    &:hover {
+      color: #ccc;
     }
+  }
 }
 
 .section-copy {
-    font-size: 14px;
-    background-color: #191919;
-    a {
-        color: #ccc;
-    }
+  font-size: 14px;
+  background-color: #191919;
+
+  a {
+    color: #ccc;
+  }
 }
 
 .section-copy-wrap {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .developer {
-    margin-left: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 567px) {
+  .footer-dark-wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .footer-contacts,
+  .footer-menu {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .copy {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+  .footer-contacts,
+  .footer-menu {
+    width: 50%;
+  }
+
+  .footer-info {
+    width: 100%;
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-section {
+    max-width: calc(100% / 3);
+    flex: calc(100% / 3);
+  }
 }

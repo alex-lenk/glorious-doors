@@ -1,34 +1,83 @@
 .section-service {
-    background-color: #296dc1;
-    color: #fff;
+  background-color: #296dc1;
+  color: #fff;
 }
 
 .section-service-list {
-    height: 100px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 0;
-    list-style: none;
+  padding-top: 25px;
+  margin-bottom: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    flex: 1 1 auto;
     display: flex;
-    li {
-        position: relative;
-        flex: 1 1 auto;
+    align-items: center;
+
+
+    &:nth-child(3) svg {
+      stroke: #fff;
     }
-    svg {
-        width: 48px;
-        height: 48px;
-        fill: #fff;
-        stroke: #fff;
-        top: 0;
-        left: 0;
-        position: absolute;
-    }
+  }
+
+  svg {
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+    fill: #fff;
+    flex: none;
+  }
+}
+
+.section-service-inner {
 }
 
 .section-service-title {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .section-service-text {
-    font-size: 14px;
+  font-size: 14px;
+}
+
+@media (min-width: 568px) {
+  .section-service-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1100px) {
+  .section-service-list {
+    padding-bottom: 25px;
+  }
+
+  .section-service-list li {
+    &:not(:first-child) {
+      padding-left: 25px;
+    }
+
+    &:not(:last-child) {
+      padding-right: 15px;
+      border-right: 1px solid #fff;
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .section-service-list {
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .section-service-list li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 568px) and (max-width: 1099px) {
+  .section-service-list li {
+    width: 50%;
+  }
 }
