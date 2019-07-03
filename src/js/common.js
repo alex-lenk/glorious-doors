@@ -1,15 +1,4 @@
 $(document).ready(function () {
-    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-        var msViewportStyle = document.createElement('style');
-        msViewportStyle.appendChild(
-            document.createTextNode(
-                '@-ms-viewport{width:auto!important}'
-            )
-        );
-        document.head.appendChild(msViewportStyle)
-    }
-    // END
-
     var mainOfferSider = new Swiper('.main-offer-slider', {
         pagination: '.swiper-pagination',
         nextButton: '.carousel-8',
@@ -17,7 +6,7 @@ $(document).ready(function () {
         paginationClickable: true,
         spaceBetween: 30,
         centeredSlides: true,
-        autoplay: 4000,
+        autoplay: 5000,
         effect: "fade"
     });
 
@@ -26,7 +15,7 @@ $(document).ready(function () {
         prevButton: '.carousel-5',
         slidesPerView: 5,
         slidesPerColumn: 2,
-        autoplay: 4000,
+        autoplay: 5000,
         spaceBetween: 0,
         breakpoints: {
             992: {
@@ -39,7 +28,7 @@ $(document).ready(function () {
         nextButton: '.carousel-4',
         prevButton: '.carousel-3',
         slidesPerView: 6,
-        autoplay: 3000,
+        autoplay: 5000,
         spaceBetween: 0,
         breakpoints: {
             992: {
@@ -52,7 +41,7 @@ $(document).ready(function () {
         nextButton: '.carousel-2',
         prevButton: '.carousel-1',
         slidesPerView: 3,
-        autoplay: 3000,
+        autoplay: 5000,
         spaceBetween: 30
     });
 
